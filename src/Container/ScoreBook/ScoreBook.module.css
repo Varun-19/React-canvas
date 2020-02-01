@@ -1,0 +1,62 @@
+.scoreBook {
+    display: flex;
+    width: 90rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all .3s ease-out;
+    margin-left: 5rem;
+}
+
+.scoreBook h4 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+} 
+
+.scoreBook h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+} 
+
+.miniSheet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: left;
+    justify-content: flex-start;
+}
+
+.miniSheet div {
+    margin: 3rem 3rem 0 0;
+}
+
+@media only screen and (max-width : 900px) {
+    .miniSheet {
+        flex-direction: column;
+    }
+    .scoreBook {
+        width: 80rem;
+        overflow: hidden;
+    }   
+}
+
+@media only screen and (max-width : 800px) {
+    .scoreBook {
+        width: 70rem;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .scoreBook {
+        width: 60rem;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .scoreBook {
+        width: 58rem;
+    }
+}

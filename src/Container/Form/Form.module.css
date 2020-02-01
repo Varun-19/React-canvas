@@ -1,0 +1,74 @@
+.form{
+    width: 80rem;
+    height: 15rem;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between; 
+}
+
+.form button {
+    margin-top: 3rem;
+    display: block;
+    margin-left: 30rem;
+    border: none;
+    background: #0fa2eb;
+    color: white;
+    padding: 1.2rem 1.8rem;
+    font-size: 1.6rem;
+    border-radius: 50rem;
+    transition: all .3s ease-out;
+}
+
+.form button:hover {
+    transform: translateY(-.6rem);
+}
+
+.form button:active{
+    transform: translateY(-.4rem);
+}
+.form button:focus {
+    outline: none;
+}
+
+@media only screen and (max-width : 900px) {
+    .form {
+        width: 60rem;
+    }
+
+    .form button {
+        margin-left: 25rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width : 710px) {
+    .form {
+        justify-content: space-around; 
+    }
+
+    .form button {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width : 610px) {
+    .form {
+        width: 50rem;
+        flex-direction: column;
+        height: 25rem;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .form button {
+        margin-left: 7.5rem;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .form {
+        width: 40rem;
+    }
+}
